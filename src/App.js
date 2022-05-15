@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Accordian from "./components/Accordian";
+import Banner from "./components/Banner";
+import Footer from "./components/Footer";
+import Hero from "./components/Hero";
+import Service from "./components/Service";
+import Solution from "./components/solution/Solution";
+// import NavRing from "./components/NavRing"
+import "./index.css";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <Hero/>
+    <Service/>
+    <Solution/>
+    <Accordian/>
+    <Banner/>
+    <Footer/>
+      {/* <NavRing/> */}
     </div>
   );
 }
