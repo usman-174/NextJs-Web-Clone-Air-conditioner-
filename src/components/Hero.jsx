@@ -21,14 +21,14 @@ const Hero = () => {
               <img
                 src="https://1mbys2xvv1i3i04op1tfwqjb-wpengine.netdna-ssl.com/wp-content/uploads/2020/12/logo-header.svg"
                 alt="Logo"
-                width={!Wider ? 190 : 315}
-                height={!Wider ? 190 : 315}
+                width={!Wider ? 185 : 305}
+                height={!Wider ? 185 : 305}
               />
               <div>
                 <MdPhone className=" md:hidden text-white text-3xl " />
               </div>
               <div>
-                {!isOpen ? (
+                {/* {!isOpen ? (
                   <FaBars
                     onClick={() => setisOpen(true)}
                     className="text-white border-2 text-4xl p-1 cursor-pointer rounded-sm border-white"
@@ -38,7 +38,11 @@ const Hero = () => {
                     onClick={() => setisOpen(false)}
                     className="text-white text-4xl md:absolute md:z-10 p-1 cursor-pointer rounded-sm "
                   />
-                )}
+                )} */}
+                <FaBars
+                    onClick={() => setisOpen(true)}
+                    className="text-white border-2 text-4xl p-1 cursor-pointer rounded-sm border-white"
+                  />
               </div>
             </div>
             <div className="heading  mx-auto md:flex md:justify-between md:w-[76%] mt-28 md:mt-10">
@@ -59,7 +63,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        {isOpen && <NavRing />}
+        {isOpen && <NavRing isOpen={isOpen} setisOpen={setisOpen} />}
       </div>
     </>
   );
