@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import ContactBar from "./ContactBar";
 import { FaBars } from "react-icons/fa";
 import { MdPhone } from "react-icons/md";
-import { ImCross } from "react-icons/im";
 import { useMediaQuery } from "../hooks/useMediaQuery";
+import ContactBar from "./ContactBar";
 import Form from "./Form";
 import NavRing from "./NavRing";
 
