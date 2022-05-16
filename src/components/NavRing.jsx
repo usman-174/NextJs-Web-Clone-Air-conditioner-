@@ -23,7 +23,7 @@ const NavRing = ({ isOpen, setisOpen }) => {
 
       document.removeEventListener("mousedown", checkIfClickedOutside);
     };
-  }, [isOpen]);
+  }, [isOpen,setisOpen]);
   return (
     <div className="absolute top-0 pt-36 nav-overlay">
       <svg
