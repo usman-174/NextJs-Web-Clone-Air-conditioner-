@@ -11,11 +11,11 @@ const Hero = () => {
   const Wider = useMediaQuery("(min-width: 768px)");
   return (
     <>
-      <ContactBar />
-      <div className=" hero bg-center bg-cover h-[61vh] ">
-        <div className="overlay">
-          <div className="absolute -top-[73px] md:top-24 text-center  w-full">
-            <div className="flex  justify-between items-center mx-auto  md:w-[60%] ">
+      <ContactBar setisOpen={setisOpen} />
+      <div className="hero lg:h-[1150px]">
+        <div className="overlay relative">
+          <div className="md:w-[70%]  pb-52 sm:pb-0 mx-auto">
+            <div className="hidden md:flex justify-between items-center mx-auto py-14 px-3 w-full ">
               <img
                 src="https://1mbys2xvv1i3i04op1tfwqjb-wpengine.netdna-ssl.com/wp-content/uploads/2020/12/logo-header.svg"
                 alt="Logo"
@@ -26,33 +26,25 @@ const Hero = () => {
                 <MdPhone className=" md:hidden text-white text-3xl " />
               </div>
               <div>
-                {/* {!isOpen ? (
-                  <FaBars
-                    onClick={() => setisOpen(true)}
-                    className="text-white border-2 text-4xl p-1 cursor-pointer rounded-sm border-white"
-                  />
-                ) : (
-                  <ImCross
-                    onClick={() => setisOpen(false)}
-                    className="text-white text-4xl md:absolute md:z-10 p-1 cursor-pointer rounded-sm "
-                  />
-                )} */}
+              
                 <FaBars
                     onClick={() => setisOpen(true)}
                     className="text-white border-2 text-4xl p-1 cursor-pointer rounded-sm border-white"
                   />
               </div>
             </div>
-            <div className=" mx-auto md:flex md:justify-between items-start md:w-[60%] my-32 md:my-20">
+            <div className="py-20  w-full md:mx-auto md:flex md:pb-52  md:justify-around  ">
               {/* Heading */}
-              <div className="md:w-[50%] text-left mx-2 mt-3 ">
+              <div className="md:w-[50%] md:px-0 px-3 text-left mt-3 ">
                 <h1 className="  logo-heading  ">
-                  Air Conditioning 
+                  Air 
+                  {!Wider && <br/>} {" "}
+                  Conditioning 
                     <br />
-                  Repair London
+                  Repair {!Wider && <br/>} {" "}London
                 </h1>
                 <br />
-                <small className="text-[#788082] my-3 text-lg">
+                <small className="text-[#c2c3c4] my-3 text-lg">
                   Servicing with an Air of Confidence
                 </small>
               </div>
@@ -62,6 +54,7 @@ const Hero = () => {
               </div>
             </div>
           </div>
+         
         </div>
         {isOpen && <NavRing isOpen={isOpen} setisOpen={setisOpen} />}
       </div>
