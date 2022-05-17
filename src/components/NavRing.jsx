@@ -3,6 +3,8 @@ import { useMediaQuery } from "../hooks/useMediaQuery";
 
 const NavRing = ({ isOpen, setisOpen }) => {
   const Wider = useMediaQuery("(min-width: 768px)");
+  const smaller = useMediaQuery("(min-width: 380px)");
+
   const ref = useRef();
 
   useEffect(() => {
@@ -30,8 +32,8 @@ const NavRing = ({ isOpen, setisOpen }) => {
         ref={ref}
         className="svg mx-auto"
         style={{
-          width: Wider ? "600px" : "390px",
-          height: Wider ? "600px" : "390px",
+          width: !smaller ? "375px":Wider ? "600px" : "390px",
+          height: !smaller ? "375px" : Wider ? "600px" : "390px",
         }}
         id="svg"
         viewBox="0 0 500 500"

@@ -6,22 +6,21 @@ import ContactBar from "./ContactBar";
 import Form from "./Form";
 import NavRing from "./NavRing";
 
-<MdPhone className=" mr-3 mt-1 text-3xl " />;
 const Hero = () => {
   const [isOpen, setisOpen] = useState(false);
   const Wider = useMediaQuery("(min-width: 768px)");
   return (
     <>
       <ContactBar />
-      <div className=" hero bg-center bg-cover h-[63vh] md:h-[80vw]">
+      <div className=" hero bg-center bg-cover h-[60vh]">
         <div className="overlay">
-          <div className="absolute -top-[73px] md:top-24 w-full">
-            <div className="flex justify-between items-center mx-auto w-[95%] md:w-[76%] ">
+          <div className="absolute -top-[73px] md:top-24 text-center  w-full">
+            <div className="flex  justify-between items-center mx-auto  md:w-[60%] ">
               <img
                 src="https://1mbys2xvv1i3i04op1tfwqjb-wpengine.netdna-ssl.com/wp-content/uploads/2020/12/logo-header.svg"
                 alt="Logo"
-                width={!Wider ? 185 : 305}
-                height={!Wider ? 185 : 305}
+                width={!Wider ? 165 : 280}
+                height={!Wider ? 165 : 280}
               />
               <div>
                 <MdPhone className=" md:hidden text-white text-3xl " />
@@ -44,11 +43,13 @@ const Hero = () => {
                   />
               </div>
             </div>
-            <div className="heading  mx-auto md:flex md:justify-between md:w-[76%] mt-28 md:mt-10">
+            <div className=" mx-auto md:flex md:justify-between items-start md:w-[60%] mt-32 md:mt-12">
               {/* Heading */}
-              <div className="md:w-[50%] m-2 ">
-                <h1 className="text-white text-5xl md:text-5xl  ">
-                  Air Conditioning Repair London
+              <div className="md:w-[50%] text-left mx-2 mt-3 ">
+                <h1 className="  logo-heading  ">
+                  Air Conditioning 
+                    <br />
+                  Repair London
                 </h1>
                 <br />
                 <small className="text-[#788082] my-3 text-lg">

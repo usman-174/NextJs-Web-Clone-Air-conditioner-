@@ -2,11 +2,11 @@ import React from "react";
 
 const Lists = () => {
   return (
-    <div className="mt-20 md:w-[80%] w-[85%] mx-auto text-[#465156] ">
+    <div className=" list-section mt-20 md:w-[80%] w-[85%] mx-auto text-[#465156] ">
       <ol type="1" className=" md:ml-20 m-3 px-1">
         <li className="my-4">
           <strong>Condensing units</strong>
-          <ol className="ml-20 mt-4">
+          <ol className=" ml-10  mt-4">
             <li>
               Examine and clean condenser if necessary or report condition to
               the Customer.
@@ -25,7 +25,7 @@ const Lists = () => {
         </li>
         <li className="my-4">
           <strong>Evaporator</strong>
-          <ol className="ml-20 mt-4">
+          <ol className="ml-10  mt-4">
             <li>
             Examine evaporator block. Ascertain cause of any frost accumulation. Clean if necessary or report condition to Customer.
             </li>
@@ -40,7 +40,7 @@ const Lists = () => {
         </li>
         <li className="my-4">
           <strong>Electrical & Controls</strong>
-          <ol className="ml-20 mt-4">
+          <ol className="ml-10  mt-4">
             <li>
             Check electrical terminal & contacts for tightness & signs of overheating.
             </li>
@@ -59,7 +59,7 @@ const Lists = () => {
         </li>
         <li className="my-4">
           <strong>Operation & Performance</strong>
-          <ol className="ml-20 mt-4">
+          <ol className="ml-10  mt-4">
             <li>
             Check plant operates correctly without any undue noise and vibration.
             </li>

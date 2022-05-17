@@ -2,21 +2,20 @@ import React from "react";
 
 const Form = () => {
   return (
-    <form className="flex flex-col">
+    <form className="form flex flex-col">
       <input
         type="text"
-        style={{border : "1px solid #CCCCCC"}}
+        style={{ border: "1px solid #CCCCCC" }}
         name="Name"
-        className="p-4 my-1  rounded-md"
+        className="my-1  "
         placeholder="Name"
         id=""
       />
       <input
         type="email"
         name="Email"
-        style={{border : "1px solid #CCCCCC"}}
-
-        className="p-4 my-2 rounded-md"
+        style={{ border: "1px solid #CCCCCC" }}
+        className="my-2 "
         placeholder="Email"
         id=""
       />
@@ -24,24 +23,19 @@ const Form = () => {
       <input
         type="tel"
         name="Name"
-        style={{border : "1px solid #CCCCCC"}}
-
-        className="p-4 my-1 rounded-md"
+        style={{ border: "1px solid #CCCCCC" }}
+        className="my-1 "
         placeholder="Phone"
         id=""
       />
       <textarea
         name="Message"
-        style={{border : "1px solid #CCCCCC"}}
-
+        style={{ border: "1px solid #CCCCCC" }}
         placeholder="Message"
-        className="p-4 my-2  rounded-md"
+        className="my-2  "
       ></textarea>
       <button
-        className="py-2 px-4 font-bold hover:bg-[#3898EC] text-white text-xl w-[50%] bg-[#3898EC]"
-        style={{
-          borderRadius: "50px 50px 50px 50px",
-        }}
+        className=" mx-auto md:mx-0 font-bold hover:bg-[#3898EC] text-white text-xl w-[50%] bg-[#3898EC]"
       >
         Send
       </button>

@@ -8,7 +8,7 @@ import Solution from "./components/solution/Solution";
 import "./index.css";
 function App() {
   return (
-    <div className="container">
+    <div >
       <Hero/>
     <Service/>
     <Solution/>
