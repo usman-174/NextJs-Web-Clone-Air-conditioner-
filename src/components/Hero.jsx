@@ -12,7 +12,7 @@ const Hero = () => {
   return (
     <>
       <ContactBar />
-      <div className=" hero bg-center bg-cover h-[60vh]">
+      <div className=" hero bg-center bg-cover h-[61vh] ">
         <div className="overlay">
           <div className="absolute -top-[73px] md:top-24 text-center  w-full">
             <div className="flex  justify-between items-center mx-auto  md:w-[60%] ">
@@ -43,7 +43,7 @@ const Hero = () => {
                   />
               </div>
             </div>
-            <div className=" mx-auto md:flex md:justify-between items-start md:w-[60%] mt-32 md:mt-12">
+            <div className=" mx-auto md:flex md:justify-between items-start md:w-[60%] my-32 md:my-20">
               {/* Heading */}
               <div className="md:w-[50%] text-left mx-2 mt-3 ">
                 <h1 className="  logo-heading  ">

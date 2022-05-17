@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 import { FaCaretDown } from "react-icons/fa";
 export default function Accordian() {
   return (
-    <div className=" hidden md:block mx-auto p-5 w-[70%]">
+    <div className=" hidden md:block mx-auto p-5 md:w-[65%]">
       <h1 className=" my-5 text-4xl text-center font-bold text-[#333333]">
         Air conditioning unit Repair FAQs
       </h1>

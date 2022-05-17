@@ -92,95 +92,97 @@ const Solution = () => {
       </div>
       {/* Price Section */}
       <div className="price-section my-10 solution  ">
-        <h3
-          style={{ fontFamily: "Montserrat, sans-serif", lineHeight: "30px" }}
-          className="my-3 uppercase  text-center mx-auto font-extrabold text-[#333333]"
-        >
-          Air Conditioning Repair Price
-        </h3>
-        <div className="flex flex-col md:flex-row md:justify-around mt-20 md:w-[70%] mx-auto text-center">
-          <div className="one mt-8 md:mt-0">
-            <h3 className="my-1  text-center font-extrabold text-[#333333]">
-              £150 + VAT{" "}
-            </h3>
-            <p className=" mt-2 md:mt-4 text-[#465156]">
-              a single wall mounted unit{" "}
-            </p>
+        <div className="md:mx-auto md:w-[70%]">
+          <h3
+            style={{ fontFamily: "Montserrat, sans-serif", lineHeight: "30px" }}
+            className="my-3 uppercase  text-center mx-auto font-extrabold text-[#333333]"
+          >
+            Air Conditioning Repair Price
+          </h3>
+          <div className="flex flex-col md:flex-row md:justify-around mt-20 md:w-[70%] mx-auto text-center">
+            <div className="one mt-8 md:mt-0">
+              <h3 className="my-1  text-center font-extrabold text-[#333333]">
+                £150 + VAT{" "}
+              </h3>
+              <p className=" mt-2 md:mt-4 text-[#465156]">
+                a single wall mounted unit{" "}
+              </p>
+            </div>
+            <div className="two mt-8 md:mt-0">
+              <h3 className="my-1  text-center font-extrabold text-[#333333]">
+                £90 + VAT{" "}
+              </h3>
+              <p className=" mt-2 md:mt-4 text-[#465156]">
+                for more then 3 wall mounted indoor unit{" "}
+              </p>
+            </div>
+            <div className="tree mt-8 md:mt-0">
+              <h3 className="my-1  text-center font-extrabold text-[#333333]">
+                £200 + VAT{" "}
+              </h3>
+              <p className=" mt-2 md:mt-4 text-[#465156]">
+                for one ducted AC unit{" "}
+              </p>
+            </div>
           </div>
-          <div className="two mt-8 md:mt-0">
-            <h3 className="my-1  text-center font-extrabold text-[#333333]">
-              £90 + VAT{" "}
-            </h3>
-            <p className=" mt-2 md:mt-4 text-[#465156]">
-              for more then 3 wall mounted indoor unit{" "}
-            </p>
+          {/* LISTS */}
+          <Lists />
+          <h3 className="my-4 text-center mx-auto font-bolder text-[#333333]">
+            Conditions
+          </h3>
+          <div className="mt-12 md:w-[70%] w-[80%] mx-auto text-[#465156] ">
+            <ol type="1">
+              <li className="my-3">
+                <p>
+                  <strong>INSPECTIONS:</strong>&nbsp;
+                  <span>This quotation covers the cost of labour only</span>
+                </p>
+              </li>
+              <li className="my-5">
+                <p>
+                  <span>
+                    <b>PARTS:</b>&nbsp;
+                  </span>
+                  <span>
+                    Parts will be charged for at the supplier’s current list
+                    price
+                  </span>
+                </p>
+              </li>
+              <li className="my-3">
+                <p>
+                  <span>
+                    <b>EXCLUSIONS:</b>&nbsp;
+                  </span>
+                  <span>
+                    This does not include responsibility by the Company for
+                    anything not specifically mentioned or previously excluded
+                    here. Such as electricity supply, water supply or drainage,
+                    repairs to structures of equipment, doors or
+                    fittings,complete overhauls, major repairs or replacement of
+                    major components or any repairs which cannot be done on
+                    Site. Cleaning of evaporators &amp; condensers where major
+                    work involving specialist-cleaning equipment is necessary.
+                  </span>
+                </p>
+              </li>
+            </ol>
           </div>
-          <div className="tree mt-8 md:mt-0">
-            <h3 className="my-1  text-center font-extrabold text-[#333333]">
-              £200 + VAT{" "}
-            </h3>
-            <p className=" mt-2 md:mt-4 text-[#465156]">
-              for one ducted AC unit{" "}
-            </p>
+          <div className="wrapper mt-20 md:mt-28 md:w-[80%] md:mx-auto">
+            <div className="box-list md:grid md:grid-cols-3 md:justify-center items-center  text-center md:gap-x-6 md:gap-y-20">
+              {data2.map((item) => (
+                <SolutionBox
+                  key={item.description + item.heading}
+                  svg={parse(item.svg)}
+                  desc={item.description}
+                  heading={item.heading}
+                />
+              ))}
+            </div>
           </div>
+          <ContactSection />
         </div>
-        {/* LISTS */}
-        <Lists />
       </div>
-
-      <h3 className="my-4 text-center mx-auto font-bolder text-[#333333]">
-        Conditions
-      </h3>
-      <div className="mt-12 md:w-[70%] w-[80%] mx-auto text-[#465156] ">
-        <ol type="1">
-          <li className="my-3">
-            <p>
-              <strong>INSPECTIONS:</strong>&nbsp;
-              <span>This quotation covers the cost of labour only</span>
-            </p>
-          </li>
-          <li className="my-5">
-            <p>
-              <span>
-                <b>PARTS:</b>&nbsp;
-              </span>
-              <span>
-                Parts will be charged for at the supplier’s current list price
-              </span>
-            </p>
-          </li>
-          <li className="my-3">
-            <p>
-              <span>
-                <b>EXCLUSIONS:</b>&nbsp;
-              </span>
-              <span>
-                This does not include responsibility by the Company for anything
-                not specifically mentioned or previously excluded here. Such as
-                electricity supply, water supply or drainage, repairs to
-                structures of equipment, doors or fittings,complete overhauls,
-                major repairs or replacement of major components or any repairs
-                which cannot be done on Site. Cleaning of evaporators &amp;
-                condensers where major work involving specialist-cleaning
-                equipment is necessary.
-              </span>
-            </p>
-          </li>
-        </ol>
-      </div>
-      <div className="wrapper mt-20 md:mt-28 md:w-[80%] md:mx-auto">
-        <div className="box-list md:grid md:grid-cols-3 md:justify-center items-center  text-center md:gap-x-6 md:gap-y-20">
-          {data2.map((item) => (
-            <SolutionBox
-              key={item.description + item.heading}
-              svg={parse(item.svg)}
-              desc={item.description}
-              heading={item.heading}
-            />
-          ))}
-        </div>
-      </div>
-      <ContactSection />
     </div>
   );
 };

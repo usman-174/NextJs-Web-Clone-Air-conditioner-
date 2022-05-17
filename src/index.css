@@ -23,7 +23,7 @@ ol {
 }
 .solution {
   background-image: url("https://aircon-company.com/wp-content/uploads/2020/12/background-bubbles.png");
-  /* background-position: bottom ; */
+  background-position: top ;
   background-repeat: no-repeat;
   background-size: 100% auto;
 }

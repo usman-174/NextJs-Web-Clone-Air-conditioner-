@@ -7,7 +7,7 @@ const Footer = () => {
   const Wider = useMediaQuery("(min-width: 768px)");
 
   return (
-    <div className="footer bg-[#374A52] p-5">
+    <div className="footer bg-[#374A52] p-5 ">
       <div className=" w-[80%] mx-auto pt-10">
         {/* Upper Area */}
         <div className="flex md:justify-around flex-col md:flex-row border-b-2 border-b-[#7e7878] ">
@@ -53,7 +53,7 @@ const Footer = () => {
         </div>
 
         {/* Lower Area */}
-        <div className="flex mt-10 md:justify-around flex-col md:flex-row">
+        <div className="flex mt-10 md:justify-around flex-col md:flex-row mx-auto">
           <div className="one md:w-[30%]">
             <img
               src="https://1mbys2xvv1i3i04op1tfwqjb-wpengine.netdna-ssl.com/wp-content/uploads/2020/12/logo-header.svg"
