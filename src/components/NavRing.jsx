@@ -39,11 +39,12 @@ const NavRing = ({ isOpen, setisOpen }) => {
         viewBox="0 0 500 500"
       >
         <a href="/contact-us/">
-          <g className="circle-group" transform="translate(250, 250)">
-            <circle r="110" fill="#FFFFFF"></circle>
+          <g className="circle-group"  opacity={1} transform="translate(250, 250)">
+            <circle r="110" fill="#FFFFFF" ></circle>
             <line
               className="circle-line"
               x1="0"
+             
               y1="0"
               x2="80"
               y2="0"
@@ -64,7 +65,7 @@ const NavRing = ({ isOpen, setisOpen }) => {
           </g>
         </a>
         <a href="/hot-water-system-installation/">
-          <g>
+          <g opacity={0.83}>
             <path
               className="targetx"
               d="M 64.33012701892231,101.42304845413257A 120.10412149464314 120.10412149464314 0 0 0 120 5.000000000000135 L 240,5A 240.05207768315609 240.05207768315609 0 0 1 124.33012701892224 205.34609690826525 L 64.33012701892231,101.42304845413257z"
@@ -81,7 +82,7 @@ const NavRing = ({ isOpen, setisOpen }) => {
               </tspan>
             </text>
 
-            <g className="image-group" transform="translate(235, 400)">
+            <g  className="image-group" transform="translate(235, 400)">
               <svg
                 version="1.1"
                 id="Layer_1"
@@ -100,7 +101,7 @@ const NavRing = ({ isOpen, setisOpen }) => {
           </g>
         </a>
         <a href="/heat-recovery-system-installation/">
-          <g>
+          <g opacity={0.83}>
             <path
               fill="#e8e1e1"
               d="M 64.33012701892231,101.42304845413257A 120.10412149464314 120.10412149464314 0 0 0 120 5.000000000000135 L 240,5A 240.05207768315609 240.05207768315609 0 0 1 124.33012701892224 205.34609690826525 L 64.33012701892231,101.42304845413257z"
@@ -143,7 +144,7 @@ const NavRing = ({ isOpen, setisOpen }) => {
           </g>
         </a>
         <a href="/air-conditioning-repair-london/">
-          <g>
+          <g  opacity={0.83}>
             <path
               fill="#e8e1e1"
               d="M 64.33012701892231,101.42304845413257A 120.10412149464314 120.10412149464314 0 0 0 120 5.000000000000135 L 240,5A 240.05207768315609 240.05207768315609 0 0 1 124.33012701892224 205.34609690826525 L 64.33012701892231,101.42304845413257z"
@@ -183,7 +184,7 @@ const NavRing = ({ isOpen, setisOpen }) => {
           </g>
         </a>
         <a href="/air-conditioning-installation-london/">
-          <g>
+          <g opacity={0.83}>
             <path
               fill="#e8e1e1"
               d="M 64.33012701892231,101.42304845413257A 120.10412149464314 120.10412149464314 0 0 0 120 5.000000000000135 L 240,5A 240.05207768315609 240.05207768315609 0 0 1 124.33012701892224 205.34609690826525 L 64.33012701892231,101.42304845413257z"
@@ -223,7 +224,7 @@ const NavRing = ({ isOpen, setisOpen }) => {
           </g>
         </a>
         <a href="/renewable-energy-system-installation/">
-          <g>
+          <g opacity={0.83}>
             <path
               fill="#e8e1e1"
               d="M 64.33012701892231,101.42304845413257A 120.10412149464314 120.10412149464314 0 0 0 120 5.000000000000135 L 240,5A 240.05207768315609 240.05207768315609 0 0 1 124.33012701892224 205.34609690826525 L 64.33012701892231,101.42304845413257z"
@@ -263,7 +264,7 @@ const NavRing = ({ isOpen, setisOpen }) => {
           </g>
         </a>
         <a href="/ventilation-installation/">
-          <g>
+          <g opacity={0.83}>
             <path
               fill="#e8e1e1"
               d="M 64.33012701892231,101.42304845413257A 120.10412149464314 120.10412149464314 0 0 0 120 5.000000000000135 L 240,5A 240.05207768315609 240.05207768315609 0 0 1 124.33012701892224 205.34609690826525 L 64.33012701892231,101.42304845413257z"

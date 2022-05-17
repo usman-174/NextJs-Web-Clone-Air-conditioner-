@@ -10,12 +10,8 @@ ol {
   list-style: decimal !important;
 }
 .hero {
-  position: relative;
   background-image: url("./assets/hero.jpg");
-  background-size: cover;
-  background-position: center;
-  /* width: 100%; */
-  /* height: 100%; */
+
 
 }
 .hero .overlay {
@@ -44,7 +40,7 @@ ol {
 }
 .nav-overlay {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: rgba(35, 61, 73, 0.7);
 }
 .contact-button {
@@ -75,11 +71,6 @@ ul {
   vertical-align: baseline;
   background: transparent;
 }
-/* --------------SVG---------- */
-.svg g path:hover {
-  fill: #cfd4d8;
-  transition: fill 0.2s ease-in-out;
-}
 h1.logo-heading{
   color: #fff!important;
 font-family: "Montserrat", Sans-serif;
@@ -90,7 +81,7 @@ text-transform: none;
 }
 h1,
 h2 {
-  color: #333333 !important;
+  color: #333333;
   line-height: 1.2 !important;
   font-family: "Montserrat", Sans-serif;
   font-weight: 800 ;
@@ -139,8 +130,13 @@ h3 {
   font-family: "Nunito", sans-serif !important;
   font-size: 16px !important;
 }
-.svg g {
-  opacity: 0.7;
+
+
+
+/* --------------SVG---------- */
+.svg g path:hover {
+  fill: #cfd4d8;
+  transition: fill 0.2s ease-in-out;
 }
 .svg g:hover path {
   fill: #07a0e4;
@@ -156,4 +152,7 @@ g .txt {
 .svg g:hover .txt {
   transition: fill 0.2s ease-in-out;
   fill: #eaeaeb;
+}
+.svg g:hover .txt{
+  opacity: 1;
 }
