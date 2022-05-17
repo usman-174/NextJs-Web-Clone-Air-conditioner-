@@ -12,7 +12,7 @@ const Hero = () => {
   return (
     <>
       <ContactBar setisOpen={setisOpen} />
-      <div className="hero lg:h-[1150px]">
+      <div className="hero lg:h-[1020px]">
         <div className="overlay relative">
           <div className="md:w-[70%]  pb-52 sm:pb-0 mx-auto">
             <div className="hidden md:flex justify-between items-center mx-auto py-14 px-3 w-full ">
